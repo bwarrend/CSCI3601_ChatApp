@@ -122,7 +122,7 @@ class UserThread extends Thread {
             server.removeUser(userName, this);
             socket.close();
  
-            serverMessage = userName + " has quitted.";
+            serverMessage = userName + " has quit.";
             server.broadcast(serverMessage, this);
  
         } catch (IOException ex) {
