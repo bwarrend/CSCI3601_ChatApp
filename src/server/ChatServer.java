@@ -46,7 +46,7 @@ public class ChatServer {
     
     //MAIN METHOD
     //Enter a port number and the server will start listening on that port.
-    public static void main(String[] args) {
+    public static void StartServer() {
         Scanner in = new Scanner(System.in);
         
         Logger log = new Logger("serverlog.txt");

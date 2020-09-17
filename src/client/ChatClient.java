@@ -5,6 +5,7 @@ import java.io.*;
 import java.util.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import server.ChatServer;
 
 public class ChatClient {
     private String hostname;
@@ -51,6 +52,14 @@ public class ChatClient {
 
 
     public static void main(String[] args) {
+        
+        if(args.length > 0){
+            if(args[0].equals("server")){
+                ChatServer.StartServer();
+            }
+        }
+        
+        
         String hostname = "-1";
         int port = -1;
         Scanner in = new Scanner(System.in);        
